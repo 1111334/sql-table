@@ -1,6 +1,7 @@
 package org.example;
 
 import java.sql.*;
+import java.util.ArrayList;
 
 public class MyJDBC {
     public static void main(String[] args) throws SQLException {
@@ -19,8 +20,8 @@ public class MyJDBC {
 
                 String resultRow = "Student ID: " + studentId + ", Last Name: " + lastName + ", First Name: " + firstName;
                 System.out.println(resultRow);
-
             }
+
         } catch (Exception e) {
             e.printStackTrace();
         }
